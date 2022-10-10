@@ -1,2 +1,2 @@
 # calculator-js
-Creación de una calculador -> Curso Udemy -  javaScript  intensivo
+Creación de una calculadora -> Curso Udemy -  javaScript intensivo
