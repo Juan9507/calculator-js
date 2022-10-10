@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #780206;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #061161, #780206);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #061161, #780206);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #bb8282;
+  background-color: #fffde7;
+}
+.calculator #display {
+  color: #0a1e23;
+  margin: 0 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  border: #c4c7e6 solid;
+  padding-right: 10px;
+  margin-top: 30px;
+}
+.calculator #equal {
+  height: 130px;
+}
+.calculator #clear {
+  background-color: #ffd5d8;
+  color: #fc4552;
+}
+.calculator .btn-number {
+  background-color: #c3eaff;
+  color: black;
+}
+.calculator .btn-operator {
+  background-color: #ffd0fb;
+  color: #f967f3;
+}
+.calculator .btn-equal {
+  background-color: #adf9e7;
+}
+.calculator.dark {
+  background-color: #1B1B1B;
+}
+.calculator.dark #display {
+  color: #f8fafb;
+}
+.calculator.dark #clear {
+  background-color: #4C35AA;
+  color: white;
+}
+.calculator.dark .btn-number {
+  background-color: #8EFDA6;
+  color: black;
+  font-weight: 600;
+}
+.calculator.dark .btn-operator {
+  background-color: #e4a982;
+  color: #aa00a4;
+}
+.calculator.dark .btn-equal {
+  background-color: #f23c00a8;
+  color: #FFFFFF;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  box-shadow: 0 0 3em white;
+  z-index: -1;
+}
+.theme-toggler.active {
+  color: #333;
+}
+.theme-toggler.active::before {
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 3em white;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  box-shadow: 0 0 30px rgba(245, 145, 145, 0.911);
+}
+
+/*Dark theme*/
